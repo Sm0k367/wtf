@@ -11,8 +11,6 @@ const nextConfig = {
     ],
   },
   env: {
-    // Place your GROQ_API_KEY (or other secrets) inside Vercel's dashboard, not here!
-    // This is just for clarity if loading env vars locally.
     GROQ_API_BASE: process.env.GROQ_API_BASE,
     GROQ_API_KEY: process.env.GROQ_API_KEY,
   },
