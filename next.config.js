@@ -6,15 +6,10 @@ const nextConfig = {
     domains: [
       'media.giphy.com',
       'images.unsplash.com',
-      'cdn.example.com',
+      'cdn.example.com', // Add any future asset CDN here
     ],
   },
-  // It's safe to keep the env block, as Next will inject at build time,
-  // but don't directly access env vars outside this block during build.
-  env: {
-    GROQ_API_BASE: GROQ_API_BASE || 'https://api.groq.com',
-    GROQ_API_KEY: GROQ_API_KEY || '', // Leave blank if not set
-  },
+  // No .env or process.env here – Vercel will expose env vars to your frontend as NEXT_PUBLIC_* automatically if you want (see note below)
 };
 
 module.exports = nextConfig;
