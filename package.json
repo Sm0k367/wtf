@@ -1,0 +1,29 @@
+{
+  "name": "epic-tech-ai-homepage",
+  "version": "1.0.0",
+  "description": "An ultra-cinematic, AI-powered homepage for EPIC TECH AI. 8K, neon dusk, cinematic video & interactive everything.",
+  "author": "Sm0k367 & the AI Chaos Crew",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sm0k367/wtf"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
