@@ -1,0 +1,39 @@
+# .gitignore
+
+# Node modules & build output
+node_modules/
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dotenv environment files
+.env*
+!.env.example
+
+# OS crap
+.DS_Store
+Thumbs.db
+
+# Vercel platform files
+.vercel/
+.now/
+
+# Editor/IDE junk
+.idea/
+*.swp
+*.swo
+*.vscode/
+*.code-workspace
+
+# Test coverage
+coverage/
+
+# Optional: local videos, big assets in public/ (if you don't want to push demo MP4s)
+public/*.mp4
+public/*.mov
+public/*.webm
