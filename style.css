@@ -1,6 +1,6 @@
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #000;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -49,22 +49,24 @@ main {
   height: 100%;
 }
 
-section {
+.hero-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-h1, h2 {
+.hero-content h1 {
+  font-size: 48px;
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -80,29 +82,7 @@ button:hover {
   background-color: #444;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project {
-  margin: 20px;
-  width: calc(33.33% - 20px);
-}
-
-.project img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Glassmorphism */
-.glass {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+section {
+  position: absolute;
+  top: 0;
+  left
