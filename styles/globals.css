@@ -1,0 +1,59 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #111;
+  color: #f8f8ff;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 18px #2fedff99;
+}
+
+::-webkit-scrollbar {
+  background: #232446;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0ff2;
+  border-radius: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 0;
+  font-weight: 800;
+}
+
+code {
+  background: #181A32;
+  color: #0ff;
+  padding: 0.2em 0.5em;
+  border-radius: 0.45em;
+  font-size: 0.95em;
+}
+
+/* Pulse animation for AI elements */
+.ai-glow {
+  animation: pulseGlow 1.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  box-shadow: 0 0 32px #0ffb, 0 0 6px #0ff8;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 32px #0ffb, 0 0 6px #0ff8; }
+  50% { box-shadow: 0 0 64px #04f, 0 0 18px #0ff1; }
+}
