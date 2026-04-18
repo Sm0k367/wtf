@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "epic-tech-ai-homepage",
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "GROQ_API_BASE": "@groq_api_base",
+    "GROQ_API_KEY": "@groq_api_key"
+  }
+}
